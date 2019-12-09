@@ -1,0 +1,6 @@
+<view class="setwifi-page">
+  <view>
+    请将手机连接到名称为Airpurifier-xxx的Wi-Fi，连接成功后，返回app当中
+  </view>
+  <button bindtap="connectWifi">去设置Wi-Fi</button>
+</view>

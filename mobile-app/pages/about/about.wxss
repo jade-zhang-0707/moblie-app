@@ -1,0 +1,24 @@
+/* pages/about/about.wxss */
+
+.about-page{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.about-page .logo{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.about-page .image{
+  width: 200px;
+  height:50px;
+}
+.about-page .version{
+  margin-top: 150px;
+  text-align: center;
+}

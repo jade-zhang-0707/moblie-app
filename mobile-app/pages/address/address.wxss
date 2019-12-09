@@ -1,0 +1,27 @@
+.address-page .address-item view{
+  display:inline-block;
+}
+
+.address-page .address-item > view:first-child{
+  color:#1296db;
+  margin:0px 10px;
+}
+
+.address-page .address-item view:last-child{
+  float:right;
+  font-size:14px;
+}
+
+.address-page .address-item view:last-child view{
+  padding:0px 7px;
+}
+
+.address-page .address-item view:last-child view:last-child{
+  color:red;
+}
+
+.address-page button{
+  background-color:#1296db;
+  color:white;
+  margin-top:50px;
+}

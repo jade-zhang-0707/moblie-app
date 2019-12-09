@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="index-page">
+  <view class="section">{{citys[currentIndex].cityname}}</view>
+  <view class="section switch-indexs">
+    <label wx:for="{{citys}}" class="{{index == currentIndex ? 'selected':''}}"></label>
+  </view>
+  <swiper bindchange="swiperChange" indicator-dots="{{false}}" autoplay="{{false}}">
+    <block wx:for="{{citys}}">
+      <swiper-item>
+        <regionMeteo city="{{item.id}}"></regionMeteo>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view>
+    <view class="categories">
+      <button bindtap="categoryTap" id="category_1" 
+        class="{{currentCategory == 1 ? 'selected':''}}">动态<label></label></button>
+      <button bindtap="categoryTap" id="category_2" 
+        class="{{currentCategory == 2 ? 'selected':''}}">设备测评<label></label></button>
+      <button bindtap="categoryTap"  id="category_3" 
+        class="{{currentCategory == 3 ? 'selected':''}}">科普知识<label></label></button>
+    </view>
+    <view class="article-item">
+      <image src="/images/clean.jpg"></image>
+      <view>
+        <view>华为净化器2.0评测</view>
+        <view><image src="/images/cat.jpg"></image>虎小妹专栏<label>2.4万人阅读</label></view>
+      </view>
+    </view>
+    <view class="article-item">
+      <image src="/images/clean.jpg"></image>
+      <view>
+        <view>华为净化器2.0评测</view>
+        <view><image src="/images/cat.jpg"></image>虎小妹专栏<label>2.4万人阅读</label></view>
+      </view>
+    </view>
+    <view class="article-item">
+      <image src="/images/clean.jpg"></image>
+      <view>
+        <view>华为净化器2.0评测</view>
+        <view><image src="/images/cat.jpg"></image>虎小妹专栏<label>2.4万人阅读</label></view>
+      </view>
+    </view>
+  </view>
+</view>

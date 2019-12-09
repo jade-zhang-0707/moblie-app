@@ -1,0 +1,26 @@
+.wifiresult-page button{
+  background-color:#1296db;
+  color:white;
+  position:absolute;
+  bottom:100px;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+.wifiresult-page .success.tip{
+  width:60%;
+  text-align:center;
+  margin:50px auto;
+}
+
+.wifiresult-page .fail.tip{
+  width:80%;
+  text-align:left;
+  margin:50px auto;
+}
+
+.wifiresult-page .fail.tip > view:first-child{
+  text-align:center;
+  margin-bottom:40px;
+}

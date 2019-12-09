@@ -1,0 +1,18 @@
+<view class="settingwifi-page">
+  <view>选择设置工作的WI-FI</view>
+  <form>
+    <view class="form-item">
+      <label style="position:relative;top:8px;">SSID</label>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{wifis}}">
+        <view class="picker">
+          {{wifis[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <label>密码</label>
+      <input password name="text"></input>
+    </view>
+    <button bindtap="setWifi" formType="submit">下一步</button>
+  </form>
+</view>

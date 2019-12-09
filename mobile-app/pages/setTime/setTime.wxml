@@ -1,0 +1,48 @@
+<!--pages/setTime/setTime.wxml-->
+<view>
+  <view>
+    <ul class="setTime_ul">
+      <li class="setTime">
+        <view>定时开机</view>
+        <view><switch type="switch" bindchange="switch1Change"></switch></view>
+      </li>
+      <li class="setTime" wx:if="{{isShow1}}">
+        <view>重复</view>
+        <view>
+          <button id="steTime_btn" bindtap="repeatOn"><image class="next" src="../../images/next.png"></image></button>
+        </view>
+      </li>
+      <li class="setTime" wx:if="{{isShow1}}">
+        <view>时间</view>
+        <view>
+          <button id="steTime_btn"><image class="next" src="../../images/next.png"></image></button>
+        </view>
+        
+      </li>
+    </ul>
+  </view>
+
+
+<view class="box">
+    <ul class="setTime_ul">
+      <li class="setTime">
+        <view>定时关机</view>
+        <view><switch type="switch" bindchange="switch2Change"></switch></view>
+      </li>
+      <li class="setTime" wx:if="{{isShow2}}">
+        <view>重复</view>
+        <view>
+          <button id="steTime_btn" bindtap="repeatOff"><image class="next" src="../../images/next.png"></image></button>
+        </view>
+      </li>
+      <li class="setTime" wx:if="{{isShow2}}">
+        <view>时间</view>
+        <view>
+          <button id="steTime_btn"><image class="next" src="../../images/next.png"></image></button>
+        </view>
+        
+      </li>
+    </ul>
+  </view>
+
+</view>

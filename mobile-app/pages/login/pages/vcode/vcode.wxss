@@ -1,0 +1,3 @@
+/* pages/login/pages/vcode/vcode.wxss */
+
+@import "../../common/lib/weui.wxss";

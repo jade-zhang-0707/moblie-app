@@ -1,0 +1,14 @@
+<view class="searchdevice-page">
+  <view>
+    <image src="/images/find.png"></image>
+    <label>搜索</label>
+  </view>
+  <view class="product-item" bindtap="setting">
+    <cover-image src="/images/clean.jpg"></cover-image>
+    <label>V2空气净化器</label>
+  </view>
+  <view class="product-item" bindtap="setting">
+    <cover-image src="/images/clean.jpg"></cover-image>
+    <label>V3空气净化器</label>
+  </view>
+</view>

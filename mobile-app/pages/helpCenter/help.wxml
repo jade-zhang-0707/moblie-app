@@ -1,0 +1,24 @@
+<!--pages/helpCenter/help.wxml-->
+<view class="help-page">
+
+<view class="question">
+  <view class="number">1.</view>
+  <view>无法连接网络怎么办</view>
+</view>
+
+<view class="answer">
+  <view class="flag">回答:</view>
+  <view>请确认 Wi-Fi 频段是否是2.4GHz，并且查看密码是否正确</view>
+</view>
+
+<view class="question">
+  <view class="number">2.</view>
+  <view>购买的订阅服务是自己申请更换配件吗？</view>
+</view>
+
+<view class="answer">
+  <view class="flag">回答:</view>
+  <view>当滤芯即将到达使用寿命，我们会提前与您联系，安排发货</view>
+</view>
+
+</view>

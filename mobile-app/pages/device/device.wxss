@@ -1,0 +1,100 @@
+.device-page{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.device-page .header{
+  border-bottom:1px solid #b1b1b1;
+  height:30px;
+  line-height:30px;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.device-page .header .title button{
+  background:transparent;
+  font-weight:normal;
+  font-size:14px;
+  line-height:30px;
+  height:30px;
+  vertical-align:middle;
+  padding:0px;
+  min-height: 30px;
+  position:relative;
+  overflow:hidden;
+}
+
+.device-page .header .title button+.address-list{
+  position:absolute;
+  width:100px;
+  border:1px solid #b1b1b1;
+  z-index:1000;
+  margin:auto;
+  left:0;
+  right:0;
+  text-align:center;
+  display:none;
+  background-color:#fff;
+}
+
+.device-page .header .title button.selected+.address-list{
+  display:block;
+}
+
+.device-page .header .add-device{
+  position:absolute;
+  right:10px;
+  top:10px;
+  color:#1296db;
+}
+
+.device-page .address-list{
+  font-size:14px;
+}
+
+.device-page .no-devices image{
+  width:200px;
+  height:130px;
+  margin:50px auto;
+  display:block;
+}
+
+.device-page .no-devices button{
+  border:1px solid #1296db;
+  background-color:transparent;
+  color:#1296db;
+}
+
+.device-page .devices-display > view:first-child{
+  margin:5px 10px;
+  border-left:2px solid #1296db;
+  height:20px;
+  line-height:20px;
+  padding-left:5px;
+}
+
+.device-page .device-item{
+  width:calc(50% - 30px);
+  margin:10px;
+  box-shadow: 0px 0px 5px #888888;
+  display:inline-block;
+  border-radius:5px;
+  padding:5px;
+}
+
+.device-page .device-item .device-name label{
+  float:right;
+  font-size:12px;
+  color:#b1b1b1;
+}
+
+.device-page .device-item .device-quality{
+  font-size:12px;
+  color:#b1b1b1;
+}
+
+.device-page .device-item cover-image{
+  display:inline-block;
+  width:100px;
+
+}

@@ -1,0 +1,12 @@
+<view class="address-page">
+  <view class="address-item" 
+    wx:for="{{address}}">
+    <view class="fa fa-map-marker"></view>
+    <view>{{item.text}}</view>
+    <view>
+      <view bindtap="modify" data-value="{{item.id}}">修改</view>
+      <view bindtap="delete" data-value="{{item.id}}">删除</view>
+    </view>
+  </view>
+  <button bindtap="add">添加</button>
+</view>

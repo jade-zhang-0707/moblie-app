@@ -1,0 +1,17 @@
+<view class="editaddress-page container">
+  <form bindsubmit="modify">
+    <view class="form-item">
+      <label>家庭名称</label>
+      <input name="text" value="{{city.text}}" disabled="{{type==0}}"></input>
+    </view>
+    <view class="form-item">
+      <label>家庭所在省份</label>
+      <input name="province" value="{{city.province}}"></input>
+    </view>
+    <view class="form-item">
+      <label>家庭所在城市</label>
+      <input name="city" value="{{city.city}}"></input>
+    </view>
+    <button formType="submit">保存</button>
+  </form>
+</view>

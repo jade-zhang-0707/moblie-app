@@ -1,0 +1,13 @@
+.setwifi-page > view:first-child{
+  margin:50px 20px;
+}
+
+.setwifi-page button{
+  background-color:#1296db;
+  color:white;
+  position:absolute;
+  bottom:100px;
+  left:0;
+  right:0;
+  margin:auto;
+}

@@ -1,0 +1,32 @@
+/* pages/repeatOff/repeatOff.wxss */
+.items{
+  width:90%;
+  line-height:120rpx;
+  text-align: left;
+  border: 1rpx solid #000000;
+  display:flex;
+  flex-direction: row;
+  margin-left:5%;
+  margin-bottom:50rpx;
+  justify-content: space-around;
+}
+.radio{
+  zoom:0.6;
+}
+radio .wx-radio-input.wx-radio-input-checked {
+  background-color: #000000;
+  border-color:#000000;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.items-weekdays{
+  width:90%;
+  line-height:120rpx;
+  text-align: left;
+  border: 1rpx solid #000000;
+  display:flex;
+  flex-direction: row;
+  margin-left:5%;
+  justify-content: space-around;
+}

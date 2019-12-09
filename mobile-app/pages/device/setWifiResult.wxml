@@ -1,0 +1,10 @@
+<view class="wifiresult-page">
+  <view wx:if="{{state}}" class="success tip">恭喜您！配网成功，开始使用您的设备吧!</view>
+  <view wx:else class="fail tip">
+    <view>配网失败，请重新尝试</view>
+    <view>· 请确认您连接的Wi-Fi是否为2.4GHz频段</view>
+    <view>· 请把手机和设备放到靠近路由器的地方</view>
+    <view>· 请确认密码是否正确</view>
+  </view>
+  <button bindtap="connectWifi">{{state ? '确定':'返回'}}</button>
+</view>

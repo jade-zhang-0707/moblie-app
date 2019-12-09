@@ -1,0 +1,33 @@
+/* pages/advice/advice.wxss */
+
+.advice-page{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.advice-page .panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-page .panel .title{
+  margin-top: 20px;
+}
+
+.advice-page .panel .input{
+  margin-top: 20px;
+  height: 200px;
+  border: 1rpx solid #d3d0c9;
+  /* border-radius: 8px; */
+}
+
+.advice-page .panel .button{
+  margin-top: 20px;
+  text-align: center;
+  background-color: #0186fa;
+  color: #fcf4f4;
+}
+

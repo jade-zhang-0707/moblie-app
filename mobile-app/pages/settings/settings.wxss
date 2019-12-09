@@ -1,0 +1,183 @@
+/* pages/settings/settings.wxss */
+
+.settings-page{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.settings-page .item{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  border-bottom:1px solid #f0f8ff;
+  line-height:50px;
+}
+
+.settings-page .left{
+  margin-left: 27rpx;
+  height:40px;
+  width:30px;
+  flex: 1;
+}
+
+.settings-page .right{
+  margin-right: 27rpx;
+  height:40px;
+  width:30px;
+}
+
+.settings-page .exit{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+}
+
+.settings-page .button{
+  text-align: center;
+  background-color: #0186fa;
+  color: #fcf4f4;
+}
+
+
+/* 遮罩 */
+.settings-page .shadow{
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+/* 上滑高度 */
+.settings-page .choosen{
+  width: 100%;
+  height: 50%; 
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  z-index: 98;
+}
+/* 内容 */
+.settings-page .container-box {
+  /* display: flex; */
+  height: 100%;
+  /* flex-direction: column; */
+  width: 100%;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  z-index: 98;
+}
+
+.settings-page .container-box .fxd{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.settings-page .container-box .content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.settings-page .container-box .icon1{
+  margin-top: 20px;
+  margin-right: 20px;
+  height: 60px;
+  width: 50px;
+}
+
+.settings-page .container-box .icon2{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 60px;
+  width: 50px;
+}
+ 
+/* 遮罩结束 */
+
+
+/* 弹出框*/ 
+.settings-page .modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.settings-page .modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.settings-page .modal-title {
+  padding-top: 50rpx;
+  height: 86rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+.settings-page .modal-content {
+  padding: 50rpx 32rpx;
+}
+.settings-page .modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+.settings-page .input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+.settings-page input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+.settings-page .modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+.settings-page .btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+.settings-page .btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+} 
+
+/*弹出框结束*/

@@ -1,0 +1,32 @@
+<!--components/regionMeteo/regionMeteo.wxml-->
+<view class="region-meteo">
+  <view class="{{meteo[city-1].weather == 1 ? 'sun meteo':'overcast meteo'}}">
+    <image src="{{meteo[city-1].weather == 1 ? '/images/sun.png':'/images/overcast.png'}}"></image>
+    <label>{{meteo[city-1].temperature}} °C</label>
+    <label>{{meteo[city-1].humidity}} %</label>
+  </view>
+  <view class="{{meteo[city-1].weather == 1 ? 'sun quality':'overcast quality'}}">
+    空气质量：{{meteo[city-1].airquality}} <label>PM2.5</label>：{{meteo[city-1].pm25}}μg/m<sub>3</sub>
+  </view>
+  <view class="indoor">
+    <view>空气质量：{{meteo[city-1].indoorairquality}}</view>
+    <view>室内</view>
+    <view>
+      <image src="/images/thermometer.png"></image>
+      <label>{{meteo[city-1].indoortemperature}} °C</label>
+      <image src="/images/water.png"></image>
+      <label>{{meteo[city-1].indoorhumidity}} %</label>
+    </view>
+  </view>
+  <view>
+    统计数据
+    <view class="chart">
+      <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+      <view>
+        <button id="time_1" bindtap="timeClick" class="{{chartIndex == 1 ? 'selected':''}}">day</button>
+        <button id="time_2" bindtap="timeClick" class="{{chartIndex == 2 ? 'selected':''}}">week</button>
+        <button id="time_3" bindtap="timeClick" class="{{chartIndex == 3 ? 'selected':''}}">month</button>
+      </view>
+    </view>
+  </view>
+</view>

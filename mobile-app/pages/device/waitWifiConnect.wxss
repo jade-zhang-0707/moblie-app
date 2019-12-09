@@ -1,0 +1,19 @@
+.waitwifi-page{
+  text-align:center;
+}
+
+.waitwifi-page > view{
+  height:250px;
+  width:200px;
+  margin:auto;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.waitwifi-page > view > view:first-child{
+  margin-bottom:30px;
+}
+

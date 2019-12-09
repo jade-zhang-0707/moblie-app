@@ -1,0 +1,95 @@
+.switch-indexs label{
+  border-bottom:2px solid #f1f1f1;
+  display:inline-block;
+  width:50px;
+}
+
+.switch-indexs label.selected{
+  border-bottom:2px solid #1296db;
+}
+
+.index-page swiper{
+  height:560px;
+}
+
+.index-page .categories{
+  height:30px;
+  border-bottom:1px solid #b1b1b1;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.index-page .categories button{
+  display:inline-block;
+  text-align:center;
+  font-size:15px;
+  background:transparent;
+  height:20px;
+  width:33.33%;
+  font-weight:normal;
+  padding:0px;
+}
+
+.index-page .categories button.selected{
+  color:#1296db;
+  
+}
+
+.index-page .categories button.selected label{
+  border-bottom:3px solid #1296db;
+  display:block;
+  width:80px;
+  margin:auto;
+  position:relative;
+  top:8px;
+}
+
+.index-page .article-item{
+  padding:5px 10px;
+}
+.index-page .article-item image{
+  display:inline-block;
+  width:80px;
+  height:80px;
+}
+
+.index-page .article-item > view{
+  float:right;
+  width:calc(100% - 90px);
+}
+
+.index-page .article-item > view > view{
+  height:40px;
+  line-height:40px;
+}
+
+.index-page .article-item > view > view:first-child{
+  vertical-align: top;
+}
+
+.index-page .article-item > view > view:last-child{
+  vertical-align: bottom;
+  font-size:12px;
+}
+
+.index-page .article-item > view > view:last-child image{
+  display:inline-block;
+  height:20px;
+  width:20px;
+  position:relative;
+  top:5px;
+  border-radius:10px;
+}
+
+.index-page .article-item > view > view:last-child label{
+  float:right;
+  color:#b1b1b1;
+}
+
+.index-page .article-item{
+  border-bottom:1px solid #b1b1b1;
+}
+
+.index-page .article-item:last-child{
+  border-bottom:none;
+}

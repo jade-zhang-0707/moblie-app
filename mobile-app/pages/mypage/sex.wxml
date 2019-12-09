@@ -1,0 +1,17 @@
+<!--pages/mypage/sex.wxml-->
+<view class="sex-page">
+
+  <radio-group>
+    <view class="options">
+      <view class="left">男性</view>
+      <radio class="right" bindtap=""></radio>
+    </view>
+
+    <view class="options">
+      <view class="left">女性</view>
+      <radio class="right" bindtap=""></radio>
+    </view>
+  </radio-group>
+
+  <button class="button" bindtap="save">保存</button>
+</view>

@@ -1,0 +1,21 @@
+<view class="adddevice-page">
+  <view bindtap="search">
+    <image src="/images/find.png"></image>
+    <label>搜索</label>
+  </view>
+  <view>
+    <view class="left">
+      <view wx:for="{{devices}}" bindtap="selectCategory" data-value="{{item.id}}" class="{{currentCategory == item.id ? 'selected category':'category'}}">{{item.name}}</view>
+    </view>
+    <view class="right">
+      <view class="product-item" bindtap="search">
+        <cover-image src="/images/clean.jpg"></cover-image>
+        <label>V2空气净化器</label>
+      </view>
+      <view class="product-item" bindtap="search">
+        <cover-image src="/images/clean.jpg"></cover-image>
+        <label>V3空气净化器</label>
+      </view>
+    </view>
+  </view>
+</view>

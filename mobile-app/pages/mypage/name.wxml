@@ -1,0 +1,9 @@
+<!--pages/mypage/name.wxml-->
+<view class="name-page">
+
+  <view class="panel">
+    <input class="text" maxlength="20" auto-focus="true" value="{{name}}"></input>
+    <button class="button" bindtap="save">保存</button>
+  </view>
+
+</view>

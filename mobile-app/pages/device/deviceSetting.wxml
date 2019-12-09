@@ -1,0 +1,8 @@
+<view class="devicesetting-page">
+  <view>
+  按照下图的提示，长按配置按钮10s以上，确认LED灯变成闪烁状态
+  </view>
+  <cover-image src="/images/clean.jpg"></cover-image>
+  <view class="confirmtip"><radio value="{{confirm}}" checked="{{confirm}}"></radio>已确认上述操作</view>
+  <button bindtap="next">下一步</button>
+</view>

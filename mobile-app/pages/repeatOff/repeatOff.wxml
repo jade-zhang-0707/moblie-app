@@ -1,0 +1,29 @@
+<!--pages/repeatOff/repeatOff.wxml-->
+<view>
+  <view >
+    <radio-group class="radio-group">
+      <view class="items">
+        <p>执行一次</p>
+        <radio class="radio"> </radio>
+      </view>
+      <view class="items">
+        <p>每天</p>
+        <radio class="radio"> </radio>
+      </view>
+      <view class="items">
+        <p>工作日</p>
+        <radio class="radio"> </radio>
+      </view>
+      <view class="items-weekdays">
+        <p>自定义</p>
+        <radio class="radio" bindtap="radio"></radio>
+      </view>
+    </radio-group>
+    <radio-group class="radio-group" wx:if="{{radioShow}}">
+      <view class="items-weekdays" wx:for-items="{{weekdays}}" wx:key="name" value="{{item.name}}">
+        <p>{{item.value}}</p>
+        <radio class="radio" checked="{{item.checked}}"> </radio>
+      </view>
+    </radio-group>
+  </view>
+</view>

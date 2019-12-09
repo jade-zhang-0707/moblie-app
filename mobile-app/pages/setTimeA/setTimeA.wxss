@@ -1,0 +1,45 @@
+/* pages/setTimeA/setTimeA.wxss */
+.setTime_ul{
+  width:90%;
+  border-radius: 20rpx;
+}
+.setTime{
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 110rpx;
+  border:1rpx solid #000000;
+  margin-left:5%;
+}
+li:nth-child(2){
+    border-top-width: 0rpx; 
+}
+li:nth-child(3){
+    border-top-width: 0rpx; 
+}
+switch{
+  zoom:0.8;
+}
+#steTime_btn{
+  width:60rpx;
+  height:60rpx;
+  background-color: #ffffff;
+}
+.next{
+  width:60rpx;
+  height:60rpx;
+}
+.box{
+  margin-top:50rpx;
+}
+.addTime{
+  line-height: 50rpx;
+}
+.addTime>span{
+  display:block;
+  line-height: 50rpx;
+  color:gainsboro;
+}
+

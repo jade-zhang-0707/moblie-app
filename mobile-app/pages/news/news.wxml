@@ -1,0 +1,16 @@
+<!--pages/news/news.wxml-->
+<view class="news-page">
+  <view class="item">
+    <view class="title">购买订阅服务</view>
+    <view class="date">今天 13：37：33</view>
+    <view class="content">尊敬的用户，你已购买订阅服务</view>
+    <view class="line"></view>
+  </view>
+
+  <view class="item">
+    <view class="title">设备离线通知</view>
+    <view class="date">2019-09-30 13：37：33</view>
+    <view class="content">您的设备已经离线，请知悉</view>
+    <view class="line"></view>
+  </view>
+</view>

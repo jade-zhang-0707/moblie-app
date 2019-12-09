@@ -1,0 +1,44 @@
+/* pages/mypage/sex.wxss */
+.sex-page{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.sex-page .options{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  border-bottom:1px solid #f0f8ff;
+  line-height:50px;
+}
+
+.sex-page .options .left{
+  margin: 0 40rpx;
+  height:30px;
+  flex:1;
+}
+
+.sex-page .options .right{
+  margin-right: 27rpx;
+  height:30px;
+  width:30px;
+}
+
+.sex-page .button{
+  margin-top: 30rpx;
+  align-self: center;
+  text-align: center;
+  background-color: #0186fa;
+  color: #fcf4f4; 
+  font-size:12px;
+  padding:0px;
+  vertical-align:middle ;
+  line-height:40px;
+  Height:40px;
+  Width:60px;
+}
+
+
+

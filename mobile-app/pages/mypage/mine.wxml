@@ -1,0 +1,43 @@
+<!--pages/my/my.wxml-->
+
+<view class="mine-page">
+  
+  <view class="options" bindtap="choosePic">
+    <view class="left">头像</view>
+    <image class="photo" src="/images/cat.jpg"></image>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="options" bindtap="goToName">
+    <view class="left">昵称</view>
+    <view class="center">机器猫</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="options" bindtap="goToSex">
+    <view class="left">性别</view>
+    <view class="center">未设置</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="options" bindtap="goToBirthday">
+    <view class="left">出生日期</view>
+    <view class="center">未设置</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="options">
+    <view class="left">微信</view>
+    <view class="center">未绑定</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="options">
+    <view class="left">设置密码</view>
+    <view class="center">未设置</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+
+</view>
+

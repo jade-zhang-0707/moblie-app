@@ -1,0 +1,33 @@
+<!--pages/login/pages/registration/registration.wxml-->
+<import src="../../common/head.wxml" />
+
+<view class="container">
+ <template is="head" data="{{title: ''}}"/>
+  <view class="page-body">
+    <form catchsubmit="formSubmit">
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="phone" maxlength="11" type="number" placeholder="请输入手机号" />
+          </view>
+        </view>
+      </view>
+      <view class="page-section">
+        <checkbox-group slot="tips" bindchange="bindAgreeChange" name="checkbox">
+          <label class="weui-agree testalign" for="weuiAgree">
+              <view class="weui-agree__text">
+                  <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                  <view class="weui-agree__checkbox-icon">
+                      <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                  </view>
+                  我已阅读<navigator url="" class="weui-agree__link">《健康生活用户服务条件》</navigator>
+              </view>
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+      </view>
+    </form>
+  </view>
+</view>

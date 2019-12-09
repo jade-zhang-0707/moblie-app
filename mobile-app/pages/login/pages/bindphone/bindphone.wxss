@@ -1,0 +1,21 @@
+/* pages/login/pages/bindphone/bindphone.wxss */
+@import "../../common/lib/weui.wxss";
+@import "../../common/index.wxss";
+
+label {
+  display: inline-block;
+  min-width: 270rpx;
+  margin-right: 20rpx;
+}
+form{
+  width: 100%;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}

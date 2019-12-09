@@ -1,0 +1,15 @@
+@import "../../common/lib/weui.wxss";
+@import "../../common/index.wxss";
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-body {
+  width: 90%;
+}
+
+.testalign {
+  text-align: center;
+}

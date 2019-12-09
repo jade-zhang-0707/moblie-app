@@ -1,0 +1,125 @@
+/* components/regionMeteo/regionMeteo.wxss */
+.region-meteo{
+  padding:5px 15px;
+}
+.region-meteo .meteo image{
+  width:32px;
+  height:32px;
+  float:left;
+}
+
+.region-meteo .meteo label{
+  margin-left:20px;
+  display:inline-block;
+  height:32px;
+  line-height:32px;
+  vertical-align: middle;
+}
+
+.region-meteo .meteo.sun label,
+.region-meteo .quality.sun{
+  color:rgb(243, 138, 10);
+}
+
+.region-meteo .meteo.overcast label,
+.region-meteo .quality.overcast{
+  color:aquamarine;
+}
+
+.region-meteo .quality label{
+  margin-left:20px;
+}
+
+.region-meteo .quality sub{
+  font-size:10px;
+  position:relative;
+  top:-5px;
+}
+
+.region-meteo .indoor{
+  background-image:url("data:image/png;base64,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");
+  width:100%;
+  height:200px;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  -moz-background-size:100% 100%;
+  font-size:12px;
+}
+
+.region-meteo .indoor view:first-child{
+  text-align:center;
+  padding-top:50px;
+}
+
+.region-meteo .indoor view:nth-child(2){
+  text-align:center;
+  padding-top:20px;
+}
+
+.region-meteo .indoor view:last-child{
+  text-align:center;
+  margin-top:20px;
+}
+.region-meteo .indoor view:last-child image{
+  width:32px;
+  height:32px;
+  display:inline-block;
+}
+
+.region-meteo .indoor view:last-child label{
+  height:32px;
+  line-height:32px;
+  vertical-align: top;
+  margin-left:10px;
+  margin-right:40px;
+}
+
+.region-meteo .indoor view:last-child label:last-child{
+  margin-right:0px;
+}
+
+.region-meteo .chart{
+  width:80%;
+  height:250px;
+  margin:auto;
+  margin-top:10px;
+  padding-bottom:10px;
+  border-radius:5px;
+  box-shadow: 0px 0px 5px #888888;
+}
+#mychart-dom-bar {
+  width: 100%;
+  height: 300px;
+}
+
+.region-meteo .chart view:last-child{
+  margin-top:-40px;
+  text-align:center;
+}
+.region-meteo .chart button{
+  display:inline-block;
+  background:transparent;
+  outline:none;
+  border-radius:0px;
+  font-weight:normal;
+  padding:0px !important;
+  width:60px;
+  height:40px !important;
+  line-height:40px;
+  vertical-align:middle;
+  text-align:center;
+  border:1px solid #b1b1b1;
+  border-right:none;
+  margin-bottom:0px;
+}
+
+.region-meteo .chart button:last-child{
+  border-right:1px solid #b1b1b1;
+  
+}
+
+.region-meteo .chart button.selected{
+  background-color:#1296db;
+  color:#fff;
+}
+

@@ -1,0 +1,43 @@
+<!--pages/settings/settings.wxml-->
+<view class="settings-page">
+
+  <view class="item" bindtap="showshadow" id="view1">
+    <view class="left">分享APP</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="item" bindtap="goToAbout" id="view2">
+    <view class="left">关于健康生活</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+
+  <view class="exit">
+      <button class="button" bindtap="showDialogBtn">退出登录</button>
+  </view>
+
+  <!-- 遮罩层 -->
+  <view class="shadow" wx:if="{{chooseSize}}" bindtap='hideModal1'></view>
+  <!-- 上滑高度 -->
+  <view class='choosen' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  <!-- 内容 -->
+    <view class="container-box">
+      <view class="fxd">—·—·—·—·    分享到   ·—·—·—·—</view>
+      <view class="content">
+        <image class="icon1" src="/images/weixin.png"></image>
+        <image class="icon2" src="/images/pengyouquan.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!--弹窗-->
+ <view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">确定要退出吗？</view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">再想想</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">退出</view>
+    </view>
+  </view> 
+
+
+</view>

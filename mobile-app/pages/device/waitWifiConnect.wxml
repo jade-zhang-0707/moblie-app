@@ -1,0 +1,6 @@
+<view class="waitwifi-page">
+  <view>
+    <view>正在配网中，请耐心等待</view>
+    <pie bindtap="next" value="{{progress}}" width="{{200}}" height="{{200}}"></pie>
+  </view>
+</view>

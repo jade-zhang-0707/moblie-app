@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view class="about-page">
+  <view class="logo">
+    <image class="image" src="/images/logo.png"></image>
+  </view>
+  <view class="version">V1.0.0</view>
+
+</view>
